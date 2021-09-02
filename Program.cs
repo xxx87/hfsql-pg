@@ -85,7 +85,7 @@ namespace HFSQL
           {
             string row = Regex.Replace(reader.GetValue(i).ToString().Trim(), "'", @"\'");
             if (
-                (fieldType == typeof(String) && (row.Length == 0 || row == "/")) ||
+                (fieldType == typeof(String) && row.Length == 0) ||
                 (fieldType == typeof(DateTime) && row == "01.01.1999 00:00:00")
             )
             {
@@ -119,7 +119,7 @@ namespace HFSQL
     static void Exit(string tableName)
     {
       Console.WriteLine($"Done for: {tableName}");
-			System.Environment.Exit(-1);
+      System.Environment.Exit(-1);
     }
   }
 }
