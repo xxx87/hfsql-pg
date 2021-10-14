@@ -1,2 +1,4 @@
 bin/Debug/net5.0-windows/files
 bin/Debug/net5.0-windows/scripts
+.vs
+.vscode

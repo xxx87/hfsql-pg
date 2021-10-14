@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = HFSQL_1
-build_property.ProjectDir = D:\_DEVELOPMENT\WORK\affine_mint\migrate\HFSQ_1\
+build_property.ProjectDir = d:\_DEVELOPMENT\WORK\affine_mint\migrate\HFSQ_1\

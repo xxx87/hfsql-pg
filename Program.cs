@@ -29,7 +29,7 @@ namespace HFSQL
         Environment.Exit(-1);
       }
 
-      string connectionString = $"Provider=PCSOFT.HFSQL; Data Source=localhost:4900; User ID=admin; Initial Catalog={dbName}; Extended Properties=\"Language=ISO-8859-2;\"";
+      string connectionString = $"Provider=PCSOFT.HFSQL; Data Source=localhost:4900; User ID=admin; Initial Catalog={dbName}; Extended Properties=\"Language=ISO-8859-1;\"";
       OleDbConnection connect = new OleDbConnection(connectionString);
 
       connect.Open();
@@ -83,6 +83,7 @@ namespace HFSQL
           }
           else
           {
+
             string row = Regex.Replace(reader.GetValue(i).ToString().Trim(), "'", @"\'");
             if (
                 (fieldType == typeof(String) && row.Length == 0) ||
@@ -95,6 +96,11 @@ namespace HFSQL
             if (fieldType == typeof(Boolean))
             {
               row = row.ToLower();
+            }
+
+            if (fieldType == typeof(String))
+            {
+              row = Regex.Replace(row, @"\s+", @" ");
             }
             fields[i] = fieldType == typeof(String) || fieldType == typeof(DateTime) ? $"E'{row}'" : row;
           }
@@ -115,6 +121,10 @@ namespace HFSQL
       connect.Close();
       connect.Dispose();
       Exit(tableName);
+
+      //     string row = @"Fil noir Dining POLTRONCINA1
+      // |  LITTLE ARMCHAIR";
+      //     Console.WriteLine(Regex.Replace(row, @"\s+", @" "));
     }
     static void Exit(string tableName)
     {
