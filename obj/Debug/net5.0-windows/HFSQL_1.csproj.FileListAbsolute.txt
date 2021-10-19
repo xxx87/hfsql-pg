@@ -61,7 +61,6 @@ D:\_DEVELOPMENT\WORK\affine_mint\migrate\HFSQ_1\obj\Debug\net5.0-windows\HFSQL_1
 D:\_DEVELOPMENT\WORK\affine_mint\migrate\HFSQ_1\obj\Debug\net5.0-windows\HFSQL_1.AssemblyInfoInputs.cache
 D:\_DEVELOPMENT\WORK\affine_mint\migrate\HFSQ_1\obj\Debug\net5.0-windows\HFSQL_1.AssemblyInfo.cs
 D:\_DEVELOPMENT\WORK\affine_mint\migrate\HFSQ_1\obj\Debug\net5.0-windows\HFSQL_1.csproj.CoreCompileInputs.cache
-D:\_DEVELOPMENT\WORK\affine_mint\migrate\HFSQ_1\obj\Debug\net5.0-windows\HFSQL_1.csproj.CopyComplete
 D:\_DEVELOPMENT\WORK\affine_mint\migrate\HFSQ_1\obj\Debug\net5.0-windows\HFSQL_1.dll
 D:\_DEVELOPMENT\WORK\affine_mint\migrate\HFSQ_1\obj\Debug\net5.0-windows\ref\HFSQL_1.dll
 D:\_DEVELOPMENT\WORK\affine_mint\migrate\HFSQ_1\obj\Debug\net5.0-windows\HFSQL_1.pdb
